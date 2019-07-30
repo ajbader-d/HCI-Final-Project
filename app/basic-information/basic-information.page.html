@@ -1,0 +1,199 @@
+<ion-content>
+  <div class="bk-img">
+    <ion-header no-border>
+      <ion-toolbar color="translucent">
+        <ion-buttons slot="start">
+          <ion-back-button
+            defaultHref="/tabs/cities/{{ loadedCity.id }}"
+          ></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+    <img src="{{loadedCity.basicImgUrl}}" />
+
+    <div class="title-holder">
+      <h2>{{ loadedCity.title }}</h2>
+    </div>
+  </div>
+
+  <div class="bk-line">
+    <h3>Basic Information</h3>
+  </div>
+
+  <div *ngIf="loadedCity.id == 'rome'">
+    <ion-list>
+      <ion-item [routerLink]="['romeWeather']" detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/sunny.png" />
+        </ion-avatar>
+        <ion-label>Weather</ion-label>
+        <!-- <ion-icon name="arrow-forward"></ion-icon> -->
+        <!-- <div class="icon-avatr">
+        <img src="../assets/img/arrow.png" alt="" />
+      </div> -->
+      </ion-item>
+
+      <ion-item [routerLink]="['romeCurrency']" detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/money.png" />
+        </ion-avatar>
+        <ion-label>Currency</ion-label>
+        <!-- <ion-icon name="arrow-forward"></ion-icon> -->
+        <!-- <div class="icon-avatr">
+        <img src="../assets/img/arrow.png" alt="" />
+      </div> -->
+      </ion-item>
+
+      <ion-item [routerLink]="['romeCost']" detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/budget.png" />
+        </ion-avatar>
+        <ion-label>Cost Of Living</ion-label>
+        <!-- <ion-icon name="arrow-forward"></ion-icon> -->
+        <!-- <div class="icon-avatr">
+        <img src="../assets/img/arrow.png" alt="" />
+      </div> -->
+      </ion-item>
+
+      <ion-item [routerLink]="['romeInsurance']" detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/medical-insurance.png" />
+        </ion-avatar>
+        <ion-label>Health Insurance</ion-label>
+        <!-- <ion-icon name="arrow-forward"></ion-icon> -->
+        <!-- <div class="icon-avatr">
+        <img src="../assets/img/arrow.png" alt="" />
+      </div> -->
+      </ion-item>
+
+      <ion-item [routerLink]="['romeSocket']" detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/electric.png" />
+        </ion-avatar>
+        <ion-label>Socket</ion-label>
+        <!-- <ion-icon name="arrow-forward"></ion-icon> -->
+        <!-- <div class="icon-avatr">
+        <img src="../assets/img/arrow.png" alt="" />
+      </div> -->
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf="loadedCity.id == 'paris'">
+    <ion-list>
+      <ion-item [routerLink]="['parisWeather']" detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/sunny.png" />
+        </ion-avatar>
+        <ion-label>Weather</ion-label>
+      </ion-item>
+
+      <ion-item [routerLink]="['parisCurrency']" detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/money.png" />
+        </ion-avatar>
+        <ion-label>Currency</ion-label>
+      </ion-item>
+
+      <ion-item [routerLink]="['parisCost']" detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/budget.png" />
+        </ion-avatar>
+        <ion-label>Cost Of Living</ion-label>
+      </ion-item>
+
+      <ion-item [routerLink]="['parisInsurance']" detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/medical-insurance.png" />
+        </ion-avatar>
+        <ion-label>Health Insurance</ion-label>
+      </ion-item>
+
+      <ion-item detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/electric.png" />
+        </ion-avatar>
+        <ion-label>Socket</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf="loadedCity.id == 'barcelona'">
+    <ion-list>
+      <ion-item [routerLink]="['barcelonaWeather']" detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/sunny.png" />
+        </ion-avatar>
+        <ion-label>Weather</ion-label>
+      </ion-item>
+
+      <ion-item [routerLink]="['barcelonaCurrency']" detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/money.png" />
+        </ion-avatar>
+        <ion-label>Currency</ion-label>
+      </ion-item>
+
+      <ion-item [routerLink]="['barcelonaCost']" detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/budget.png" />
+        </ion-avatar>
+        <ion-label>Cost Of Living</ion-label>
+      </ion-item>
+
+      <ion-item [routerLink]="['barcelonaInsurance']" detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/medical-insurance.png" />
+        </ion-avatar>
+        <ion-label>Health Insurance</ion-label>
+      </ion-item>
+
+      <ion-item [routerLink]="['barcelonaSocket']"  detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/electric.png" />
+        </ion-avatar>
+        <ion-label>Socket</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf="loadedCity.id == 'belrin'">
+    <ion-list>
+      <ion-item [routerLink]="['berlinWeather']" detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/sunny.png" />
+        </ion-avatar>
+        <ion-label>Weather</ion-label>
+      </ion-item>
+
+      <ion-item [routerLink]="['berlinCurrency']" detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/money.png" />
+        </ion-avatar>
+        <ion-label>Currency</ion-label>
+      </ion-item>
+
+      <ion-item [routerLink]="['berlinCost']" detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/budget.png" />
+        </ion-avatar>
+        <ion-label>Cost Of Living</ion-label>
+      </ion-item>
+
+      <ion-item [routerLink]="['berlinInsurance']" detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/medical-insurance.png" />
+        </ion-avatar>
+        <ion-label>Health Insurance</ion-label>
+      </ion-item>
+
+      <ion-item [routerLink]="['berlinSocket']" detail>
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/img/electric.png" />
+        </ion-avatar>
+        <ion-label>Socket</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

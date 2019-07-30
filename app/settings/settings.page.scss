@@ -1,0 +1,58 @@
+// .div-list {
+//     width: 100%;
+//     margin-top: 40px;
+// }
+
+// .div-list-holder {
+//     display: flex;
+//     align-items: center;
+//     -webkit-box-shadow: 0px 20px 15px -8px rgba(0,0,0,0.75);
+//     -moz-box-shadow: 0px 20px 15px -8px rgba(0,0,0,0.75);
+//     box-shadow: 0px 4px 9px -6px rgba(0, 0, 0, 0.5)
+// }
+
+// .list-image  {
+//     width: 32px;
+//     height: 32px;
+//     margin-left: 35px;
+//     margin-right: 35px;
+// }
+
+// .text-label{
+//     margin-right: 35px;
+//     width: 20%;
+// }
+
+// .custom-icon {
+//     width: 22px;
+//     height: 22px;
+//     margin-left: 40%;
+// }
+
+// .bk-img {
+//     --background: url(../../assets/img/settings-bk.png) 0 0/100% 100% no-repeat;
+//     background-size: cover;
+// }
+
+ion-toolbar {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+}
+
+.no-scroll .scroll-content {
+  overflow: hidden;
+}
+
+.icon-avatr {
+  width: 13px;
+  margin-right: 35px;
+}
+
+ion-avatar.ion-margin-start.ion-margin-end.md.hydrated {
+  margin-right: 35px !important;
+  margin-left: 35px !important;
+}
+
+.not-working {
+  opacity: 0.3;
+}

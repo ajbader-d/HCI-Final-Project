@@ -1,0 +1,10 @@
+h3 {
+  text-transform: capitalize;
+}
+
+:host {
+  ion-thumbnail {
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+}

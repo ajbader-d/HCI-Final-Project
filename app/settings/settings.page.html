@@ -1,0 +1,113 @@
+
+<ion-content>
+
+  <div class="bk-img">
+      <ion-header no-border>
+          <ion-toolbar color="translucent">
+            <ion-buttons slot="start">
+              <ion-back-button defaultHref="tabs/cities" ></ion-back-button>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+    <img src="../assets/img/hero-bk/settings-bk.png" />
+  </div>
+
+  <div class="bk-line">
+    <h3>Settings</h3>
+  </div>
+
+   <!-- <div class="div-list">
+    <div class="div-list-holder">
+      <div class="list-image">
+        <img src="../assets/img/settings.png" />
+      </div>
+      <div class="text-label">
+        <p>General</p>
+      </div>
+
+      <ion-icon name="arrow-forward" class="custom-icon"></ion-icon>
+    </div>
+
+    <div class="div-list-holder">
+      <div class="list-image">
+        <img src="../assets/img/share.png" />
+      </div>
+      <div class="text-label">
+        <p>Share</p>
+      </div>
+      <ion-icon name="arrow-forward" class="custom-icon"></ion-icon>
+    </div>
+
+    <div class="div-list-holder">
+        <div class="list-image">
+          <img src="../assets/img/writing.png" />
+        </div>
+        <div class="text-label">
+          <p>Feedback</p>
+        </div>
+        <ion-icon name="arrow-forward" class="custom-icon"></ion-icon>
+      </div>
+
+      <div class="div-list-holder">
+          <div class="list-image">
+            <img src="../assets/img/improvement.png" />
+          </div>
+          <div class="text-label">
+            Suggest a service
+          </div>
+          <ion-icon name="arrow-forward" class="custom-icon"></ion-icon>
+        </div>
+
+        <div class="div-list-holder">
+            <div class="list-image">
+              <img src="../assets/img/star.png" />
+            </div>
+            <div class="text-label">
+              <p>Rate Us</p>
+            </div>
+            <ion-icon name="arrow-forward" class="custom-icon"></ion-icon>
+          </div>
+
+  </div>  -->
+
+  <ion-list>
+    <ion-item [routerLink]="['set_1']" detail>
+      <ion-avatar class="ion-margin-start ion-margin-end">
+        <img src="../assets/img/settings.png" />
+      </ion-avatar>
+      <ion-label>General</ion-label>
+    </ion-item>
+
+    <ion-item detail class="not-working">
+      <ion-avatar class="ion-margin-start ion-margin-end">
+        <img src="../assets/img/share.png" />
+      </ion-avatar>
+      <ion-label>Share</ion-label>
+    </ion-item>
+
+    <ion-item detail class="not-working">
+      <ion-avatar class="ion-margin-start ion-margin-end">
+        <img src="../assets/img/writing.png" />
+      </ion-avatar>
+      <ion-label>Feedback</ion-label>
+    </ion-item>
+
+    <ion-item detail class="not-working">
+      <ion-avatar class="ion-margin-start ion-margin-end">
+        <img src="../assets/img/improvement.png" />
+      </ion-avatar>
+      <ion-label>Suggest a service</ion-label>
+    </ion-item>
+
+    <ion-item detail class="not-working">
+      <ion-avatar class="ion-margin-start ion-margin-end">
+        <img src="../assets/img/star.png" />
+      </ion-avatar>
+      <ion-label>Rate Us</ion-label>
+      <!-- <ion-icon name="arrow-forward"></ion-icon> -->
+      <!-- <div class="icon-avatr">
+          <img src="../assets/img/arrow.png" alt="">
+        </div> -->
+    </ion-item>
+  </ion-list>
+</ion-content>

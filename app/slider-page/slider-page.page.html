@@ -1,0 +1,125 @@
+<ion-content padding>
+  <ion-slides #slider pager="false" [options]="slideOpts" (ionSlidesDidLoad)="slidesDidLoad(slider)">
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="resize-image">
+            <img src="../assets/img/slider/colosseum.png" />
+          </ion-col>
+          <ion-col class="resize-image">
+            <img src="../assets/img/slider/eiffel-tower.png" />
+          </ion-col>
+        </ion-row>
+        <ion-text class="text-style">
+          <h3>Pick a City</h3>
+          <h5>Choose from our list of cities</h5>
+        </ion-text>
+        <ion-row>
+          <ion-col class="resize-image">
+            <img src="../assets/img/slider/sagrada-familia.png" />
+          </ion-col>
+          <ion-col class="resize-image">
+            <img src="../assets/img/slider/porto-cathedral.png" />
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <div class="img-holder">
+            <ion-avatar class="active-ball">
+              <img src="../assets/icon/icons8-360-degrees-filled-50.png" />
+            </ion-avatar>
+            <ion-avatar class="inactive-ball">
+              <img src="../assets/icon/icons8-0-degrees-50.png" />
+            </ion-avatar>
+            <ion-avatar class="inactive-ball">
+              <img src="../assets/icon/icons8-0-degrees-50.png" />
+            </ion-avatar>
+
+            <a  class="btnNext" (click)="next()" class="chevron-sign">
+              <img src="../assets/icon/chevron-sign-to-right.png" />
+            </a>
+
+          </div>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+
+    <!--  -->
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="resize-image">
+            <img src="../assets/img/slider/taxi.png" />
+          </ion-col>
+          <ion-col class="resize-image">
+            <img src="../assets/img/slider/bus.png" />
+          </ion-col>
+        </ion-row>
+        <ion-text class="text-style">
+          <h3>Pick a service</h3>
+          <h5>
+            Choose from our curated list of popular local service providers
+          </h5>
+        </ion-text>
+        <ion-row>
+          <ion-col class="resize-image">
+            <img src="../assets/img/slider/cutlery.png" />
+          </ion-col>
+          <ion-col class="resize-image">
+            <img src="../assets/img/slider/bed.png" />
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <div class="img-holder">
+            <ion-avatar class="inactive-ball">
+              <img src="../assets/icon/icons8-0-degrees-50.png" />
+            </ion-avatar>
+            <ion-avatar class="active-ball">
+              <img src="../assets/icon/icons8-360-degrees-filled-50.png" />
+            </ion-avatar>
+            <ion-avatar class="inactive-ball">
+              <img src="../assets/icon/icons8-0-degrees-50.png" />
+            </ion-avatar>
+
+            <a  class="btnNext" (click)="next()" class="chevron-sign-2">
+              <img src="../assets/icon/chevron-sign-to-right.png" />
+            </a>
+            
+          </div>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <!--  -->
+    <ion-slide class="bk-img">
+      
+      <div class=text-holder>
+        <ion-text class="text-style">
+          <h3>Instant access</h3>
+          <h5>
+            There is no need to download each separate app. Just tap on service
+            and us the app instantly
+          </h5>
+        </ion-text>
+      </div>
+
+      <div class="third-slider">
+
+        <ion-button class="sign-up" [routerLink]="['/login']">Sign In</ion-button>
+
+        <ion-avatar class="inactive-ball">
+          <img src="../assets/icon/icons8-0-degrees-50.png" />
+        </ion-avatar>
+
+        <ion-avatar class="inactive-ball">
+          <img src="../assets/icon/icons8-0-degrees-50.png" />
+        </ion-avatar>
+
+        <ion-avatar class="active-ball">
+          <img src="../assets/icon/icons8-360-degrees-filled-50.png" />
+        </ion-avatar>
+
+        <ion-button class="go" [routerLink]="['/tabs/cities']" >Let's Go</ion-button>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

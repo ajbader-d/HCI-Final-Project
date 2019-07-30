@@ -1,0 +1,23 @@
+ion-item.item.md.ion-focusable.item-interactive.item-input.item-has-placeholder.hydrated {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px soild black;
+    border: 1px solid #0000005c;
+    border-radius: 20px;
+    --border-width: 0;
+}
+
+.label-style {
+    margin: 80px 35px 10px 35px;
+    font-size: 1.2em;
+}
+
+ion-button.md.button.button-solid.ion-activatable.ion-focusable.hydrated {
+    position: relative;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -30px);
+    --background:  #56CCF2;
+    height: 8%;
+    width: 40%;
+}

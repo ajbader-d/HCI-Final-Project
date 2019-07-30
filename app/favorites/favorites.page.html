@@ -1,0 +1,51 @@
+<ion-content>
+  <div class="bk-img">
+    <ion-header no-border>
+      <ion-toolbar color="translucent">
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/tabs/cities"></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <img src="../assets/img/hero-bk/wish.png" />
+  </div>
+
+  <div class="bk-line">
+    <h3>Wishlist</h3>
+  </div>
+
+  <ion-list *ngFor="let itm of wishItems" class="myitem11">
+    <ion-item *ngIf="itm === 'rome'" [routerLink]="['/' + 'tabs/cities/rome']" routerDirection="forwrad" detail>
+      <ion-thumbnail item-start>
+        <img src="../assets/icon/cities/colosseum.png">
+      </ion-thumbnail>
+      <ion-text >
+          <h3>{{ itm }}</h3>
+        </ion-text>
+    </ion-item>
+    
+    <ion-item *ngIf="itm === 'paris'" [routerLink]="['/' + 'tabs/cities/paris']" routerDirection="forwrad" detail>
+      <ion-thumbnail item-start>
+        <img src="../assets/icon/cities/eiffel-tower.png">
+      </ion-thumbnail>
+      <ion-text >
+      <h3>{{ itm }}</h3>
+      </ion-text>
+    </ion-item>
+
+    <ion-item *ngIf="itm === 'barcelona'"  [routerLink]="['/' + 'tabs/cities/barcelona']" routerDirection="forwrad" detail>
+      <ion-thumbnail item-start>
+        <img src="../assets/icon/cities/sagrada-familia.png">
+      </ion-thumbnail>
+      <h3>{{ itm }}</h3>
+    </ion-item>
+
+    <ion-item *ngIf="itm === 'belrin'"  [routerLink]="['/' + 'tabs/cities/belrin']" routerDirection="forwrad" detail>
+      <ion-thumbnail item-start>
+        <img src="../assets/icon/cities/brandenburg-gate.png">
+      </ion-thumbnail>
+      <h3>{{ itm }}</h3>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

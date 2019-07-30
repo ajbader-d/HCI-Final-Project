@@ -1,0 +1,148 @@
+<ion-content fullscreen>
+  <div class="bk-img">
+    <ion-header no-border>
+      <ion-toolbar color="translucent">
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/tabs/cities"></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+    <img src=" {{ loadedCity.img }}" />
+
+    <div class="title-holder">
+      <!-- <h2> {{ loadedCity.title }} </h2> -->
+      <h6>{{ loadedCity.grade }}</h6>
+    </div>
+
+    <div class="text-holder">
+      <span class="left">&#8220;</span>
+      <h6>
+        {{ loadedCity.subtitle }}
+      </h6>
+      <span class="right">&#8221;</span>
+    </div>
+    <ion-button [routerLink]="loadedCity.basicInfo" class="info_btn"
+      >Basic Info</ion-button>
+  </div>
+
+  <div class="bk-line">
+    <h3>Choose a service</h3>
+    <div class="btn-holder">
+      <button
+        ion-button
+        icon-only
+        (click)="unfavoriteCity(loadedCity.id)"
+        *ngIf="isFavorite"
+      >
+        <ion-icon class="heart" name="ios-heart"></ion-icon>
+      </button>
+      <button
+        ion-button
+        icon-only
+        (click)="favoriteCity(loadedCity.id)"
+        *ngIf="!isFavorite"
+      >
+        <ion-icon class="empty-heart" name="heart-empty"></ion-icon>
+      </button>
+    </div>
+  </div>
+
+  <ion-searchbar placeholder="Search for a service"></ion-searchbar>
+
+  <ion-grid>
+    <ion-row nowrap>
+      <ion-col><div></div></ion-col>
+      <ion-col>
+        <button
+          class="services_btn"
+          [routerLink]="['experiences/', loadedCity.experienceUrl]"
+        >
+          <!-- <a href="/experiences/loadedCity.experience"></a> -->
+          <img src="../assets/img/services/exp.png" />
+        </button>
+      </ion-col>
+      <ion-col><div></div></ion-col>
+      <ion-col>
+        <button class="services_btn" (click)="taxi_service(loadedCity.id)">
+          <img src="../assets/img/services/taxi.png" />
+        </button>
+      </ion-col>
+      <ion-col><div></div></ion-col>
+    </ion-row>
+
+    <ion-row nowrap>
+      <ion-col><div></div></ion-col>
+      <ion-col>
+        <div>
+          <button class="services_btn" (click)="bus_service(loadedCity.id)">
+            <img src="../assets/img/services/bus.png" />
+          </button>
+        </div>
+      </ion-col>
+      <ion-col><div></div></ion-col>
+      <ion-col>
+        <button class="services_btn" (click)="mus_service(loadedCity.id)">
+          <img src="../assets/img/services/mus.png" />
+        </button>
+      </ion-col>
+      <ion-col><div></div></ion-col>
+    </ion-row>
+
+    <ion-row nowrap>
+      <ion-col><div></div></ion-col>
+      <ion-col>
+        <div>
+          <button class="services_btn" (click)="food_service(loadedCity.id)">
+            <img src="../assets/img/services/food.png" />
+          </button>
+        </div>
+      </ion-col>
+      <ion-col><div></div></ion-col>
+      <ion-col>
+        <div>
+          <button class="services_btn" (click)="hotel_service(loadedCity.id)">
+            <img src="../assets/img/services/hotel.png" />
+          </button>
+        </div>
+      </ion-col>
+      <ion-col><div></div></ion-col>
+    </ion-row>
+
+    <ion-row nowrap>
+      <ion-col><div></div></ion-col>
+      <ion-col>
+        <div>
+          <button class="services_btn" (click)="rest_service(loadedCity.id)">
+            <img src="../assets/img/services/rest.png" />
+          </button>
+        </div>
+      </ion-col>
+      <ion-col><div></div></ion-col>
+      <ion-col>
+        <button class="services_btn" (click)="cinema_service(loadedCity.id)">
+          <img src="../assets/img/services/cinema.png" />
+        </button>
+      </ion-col>
+      <ion-col><div></div></ion-col>
+    </ion-row>
+
+    <ion-row nowrap>
+      <ion-col><div></div></ion-col>
+      <ion-col>
+        <div>
+          <button class="services_btn" (click)="flights_service(loadedCity.id)">
+            <img src="../assets/img/services/flights.png" />
+          </button>
+        </div>
+      </ion-col>
+      <ion-col><div></div></ion-col>
+      <ion-col>
+        <button class="services_btn" (click)="atm_service(loadedCity.id)">
+          <img src="../assets/img/services/atm.png" />
+        </button>
+      </ion-col>
+      <ion-col><div></div></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
