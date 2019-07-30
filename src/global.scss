@@ -1,0 +1,56 @@
+// http://ionicframework.com/docs/theming/
+@import "~@ionic/angular/css/core.css";
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+.bk-line {
+  background: #56ccf261;
+  height: 50px;
+  position: relative;
+  width: 100%;
+  top: -4px;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #56ccf2;
+  border-bottom: 2px solid #56ccf2;
+  justify-content: space-between;
+  h3 {
+    padding: 0;
+    margin: 0;
+    margin-left: 30px;
+    font-weight: bold;
+  }
+}
+
+.bk-img {
+  position: relative;
+  ion-header {
+    position: absolute;
+    z-index: 99;
+    .sc-ion-back-button-md-h {
+      --icon-font-size: 34px;
+    }
+  }
+  .title-holder {
+    position: absolute;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    left: 28px;
+    h2 {
+      font-weight: bold;
+    }
+    h6 {
+      opacity: 0.8;
+    }
+  }
+}
