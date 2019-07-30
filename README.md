@@ -4,11 +4,15 @@ Human Computer Interaction Final project Tabi travel application for the Master 
 This project was presented as final project for HCI course
 
 # Tools was used
-1-Mock-up -> Balsamiq
-2-Low-fi prototype -> Balsamiq
-3-Medium-fi prototype -> Adobe XD
-4-High-fi prototype -> Adobe XD
-5-Final product -> Ionic 4 framework
+1-Mock-up -> Balsamiq.
+
+2-Low-fi prototype -> Balsamiq.
+
+3-Medium-fi prototype -> Adobe XD.
+
+4-High-fi prototype -> Adobe XD.
+
+5-Final product -> Ionic 4 framework.
 
 # Design Process Design Process
 # Overview
@@ -29,3 +33,7 @@ The next stage is the experience evaluation or Heuristic Evaluation Low-FI, base
 Using the feedback from the previous stage, the design was updated in the Medium-fi Prototype stage, the following 
 stage is the real user evaluation.
 Think aloud was used in this stage, in similar way the feedback from this stage was used to develop the Final product.
+
+# How to use
+Download the repo, install the ionic 4 and all it's dependencies
+https://ionicframework.com/docs
