@@ -1,0 +1,104 @@
+<ion-content>
+  <div class="bk-img">
+    <ion-header no-border>
+      <ion-toolbar color="translucent">
+        <ion-buttons slot="start">
+          <ion-back-button
+            defaultHref="/tabs/cities/{{ loadedCity.id }}"
+          ></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+    <img src=" {{ loadedCity.experienceImg }}" />
+
+    <div class="title-holder">
+      <h2>{{ loadedCity.title }}</h2>
+    </div>
+  </div>
+
+  <div class="bk-line">
+    <h3>Experiences</h3>
+  </div>
+
+  <div *ngIf="loadedCity.id == 'rome'">
+    <ion-card class="ion-margin-bottom" [routerLink]="['romeExp1']" routerDirection="forwrad">
+      <ion-card-content>
+        {{ loadedCity.experienceFirst }}
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="ion-margin-bottom" [routerLink]="['romeExp2']" routerDirection="forwrad">
+      <ion-card-content>
+        {{ loadedCity.experienceSecond }}
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="ion-margin-bottom" [routerLink]="['romeExp3']" routerDirection="forwrad">
+      <ion-card-content>
+        {{ loadedCity.experienceThird }}
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div *ngIf="loadedCity.id == 'paris'">
+    <ion-card class="ion-margin-bottom" [routerLink]="['parisExp1']" routerDirection="forwrad">
+      <ion-card-content>
+        {{ loadedCity.experienceFirst }}
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="ion-margin-bottom"  [routerLink]="['parisExp2']" routerDirection="forwrad">
+      <ion-card-content>
+        {{ loadedCity.experienceSecond }}
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="ion-margin-bottom"  [routerLink]="['parisExp3']" routerDirection="forwrad">
+      <ion-card-content>
+        {{ loadedCity.experienceThird }}
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div *ngIf="loadedCity.id == 'barcelona'">
+    <ion-card class="ion-margin-bottom" [routerLink]="['barcelonaExp1']" routerDirection="forwrad">
+      <ion-card-content>
+        {{ loadedCity.experienceFirst }}
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="ion-margin-bottom" [routerLink]="['barcelonaExp2']" routerDirection="forwrad">
+      <ion-card-content>
+        {{ loadedCity.experienceSecond }}
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="ion-margin-bottom" [routerLink]="['barcelonaExp3']" routerDirection="forwrad">
+      <ion-card-content>
+        {{ loadedCity.experienceThird }}
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div *ngIf="loadedCity.id == 'belrin'">
+    <ion-card class="ion-margin-bottom" [routerLink]="['berlinExp1']" routerDirection="forwrad">
+      <ion-card-content>
+        {{ loadedCity.experienceFirst }}
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="ion-margin-bottom" [routerLink]="['berlinExp2']" routerDirection="forwrad">
+      <ion-card-content>
+        {{ loadedCity.experienceSecond }}
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="ion-margin-bottom" [routerLink]="['berlinExp3']" routerDirection="forwrad">
+      <ion-card-content>
+        {{ loadedCity.experienceThird }}
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>

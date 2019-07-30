@@ -1,0 +1,70 @@
+.full-bk {
+  --background: none;
+  background-image: url("../../../assets/img/Gradients.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 140%;
+  height: 100%;
+}
+
+:host {
+  ion-content {
+    --background: #56ccf2;
+  }
+}
+
+.login-holder {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+}
+
+.inner-login-holder {
+  text-align: center;
+}
+
+.inner-login-holder ion-icon {
+    font-size: 28px;
+    height: 28px;
+    color: #3b5998;
+}
+
+.inner-login-holder p {
+    width: 230px;
+    font-size: 12px;
+}
+
+:host {
+  .button-solid {
+    width: 75%;
+    --background: white;
+    color: black;
+    --border-radius: 8px;
+    margin-bottom: 20px;
+    height: 40px;
+    text-transform: capitalize;
+  }
+}
+
+.login-text {
+  display: flex;
+  align-items: baseline;
+  font-size: 1.1em;
+  color: #fff;
+}
+
+.login-text span {
+    margin-left: 15px;
+}
+
+.login-text span a {
+    text-decoration: none;
+    color: #000;
+}

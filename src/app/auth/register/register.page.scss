@@ -1,0 +1,58 @@
+.register-form {
+  height: 100%;
+}
+
+.form-holder {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.inner-form-holder {
+  width: 100%;
+}
+
+.inner-form-holder .first-input {
+  margin-bottom: 40px;
+}
+
+.custom-input {
+  --border-width: 0 0 1px 0;
+  --show-full-highlight: 1;
+  --show-inset-highlight: 0;
+  border-bottom: 1px solid #00000052;
+}
+
+.custom-input:focus {
+  border-bottom: 1px solid #56ccf2;
+}
+
+ion-avatar.ion-margin-start.ion-margin-end.md.hydrated {
+  margin: 0;
+  margin-right: 25px;
+}
+
+.form-holder h3 {
+  text-transform: capitalize;
+  color: #56ccf2;
+  font-size: 2em;
+}
+
+:host {
+  .button-solid {
+    --background-hover: transparent;
+  }
+  .button-solid.submit {
+    --background: #56ccf2;
+    // --border-radius: 0;
+    --opacity: 1;
+  }
+  .button-solid.close {
+    --background: transparent;
+    color: #56ccf2;
+    --box-shadow: none;
+    font-size: 2em;
+  }
+}

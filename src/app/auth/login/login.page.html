@@ -1,0 +1,33 @@
+<ion-content>
+  <div class="full-bk">
+    <div class="login-holder">
+      <div class="logo">
+        <img src="../assets/icon/world.png" />
+      </div>
+
+      <div class="inner-login-holder">
+        <ion-button  [routerLink]="['/tabs/cities']">
+          <ion-icon  name="logo-facebook"></ion-icon>
+          <p>continue with Facebook</p>
+        </ion-button>
+
+        <ion-button  [routerLink]="['/tabs/cities']">
+          <ion-icon name="logo-google"></ion-icon>
+          <p>continue with Google</p>
+        </ion-button>
+
+        <ion-button  [routerLink]="['/tabs/cities']">
+          <ion-icon name="mail-open"></ion-icon>
+           <p>continue with Email</p> 
+        </ion-button>
+      </div>
+
+      <div class="login-text">
+        <p>Don't have an account?</p>
+        <span>
+          <a href="" [routerLink]="['/register']">Sign Up</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,73 @@
+<ion-content>
+  <form #form="ngForm" class="register-form">
+
+<div class="form-holder">
+    <div text-center>
+      <h3>Sign Up!</h3>
+    </div>
+    
+    <div class="inner-form-holder">
+      
+      <ion-item class="first-input" lines="none">
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/icon/icons8-user-male-100.png" />
+        </ion-avatar>
+        <ion-input  name="name"
+          type="text"
+          placeholder="Name"
+          ngModel
+          required
+          class="custom-input"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item class="first-input" lines="none">
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/icon/email.png" />
+        </ion-avatar>
+        <ion-input
+          name="email"
+          type="email"
+          placeholder="your@email.com"
+          ngModel
+          required
+          class="custom-input"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-avatar class="ion-margin-start ion-margin-end">
+          <img src="../assets/icon/password.png" />
+        </ion-avatar>
+        <ion-input
+          name="password"
+          type="password"
+          placeholder="Password"
+          ngModel
+          required
+          class="custom-input"
+        ></ion-input>
+      </ion-item>
+
+      <!-- <ion-item>
+              <ion-input
+                name="confirm"
+                type="password"
+                placeholder="Password again"
+                ngModel
+                required
+              ></ion-input>
+            </ion-item> -->
+    </div>
+    <div >
+      <ion-button  [routerLink]="['/tabs/cities']" type="submit" [disabled]="form.invalid" class="submit">Sign Up</ion-button>
+    </div>
+
+    <div >
+        <ion-button class="close" [routerLink]="['/login']"  >
+            <ion-icon name="close"></ion-icon>
+        </ion-button>
+      </div>
+  </div>
+  </form>
+</ion-content>

@@ -1,0 +1,70 @@
+<ion-content>
+    <div class="bk-img">
+        <ion-header no-border>
+            <ion-toolbar color="translucent">
+              <ion-buttons slot="start">
+                <ion-back-button defaultHref="tabs/settings" ></ion-back-button>
+              </ion-buttons>
+            </ion-toolbar>
+          </ion-header>
+      <img src="../assets/img/hero-bk/settings-bk.png" />
+    </div>
+  <div class="bk-line">
+    <h3>{{ loadedSetting.title }}</h3>
+  </div>
+
+  <ion-list>
+    <ion-item (click)="onEdit()">
+      <ion-label>Name</ion-label>
+      <ion-label color="medium">{{ loadedSetting.name }}</ion-label>
+      <div class="icon-avatr">
+        <img src="../assets/img/arrow.png" alt="" />
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-label color="medium">{{ loadedSetting.gender }}</ion-label>
+      <div class="icon-avatr">
+        <img src="../assets/img/arrow.png" alt="" />
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-label color="medium">{{ loadedSetting.email }}</ion-label>
+      <div class="icon-avatr">
+        <img src="../assets/img/arrow.png" alt="" />
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-label color="medium">{{ loadedSetting.password }}</ion-label>
+      <div class="icon-avatr">
+        <img src="../assets/img/arrow.png" alt="" />
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>FaceID</ion-label>
+      <ion-avatar class="ion-margin-start ion-margin-end">
+        <ion-toggle></ion-toggle>
+      </ion-avatar>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Privacy Policy</ion-label>
+      <div class="icon-avatr">
+        <img src="../assets/img/arrow.png" alt="" />
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Terms of service</ion-label>
+      <div class="icon-avatr">
+        <img src="../assets/img/arrow.png" alt="" />
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>

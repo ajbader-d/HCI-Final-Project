@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onCancel()">
+        <ion-icon name="arrow-round-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Edit Name</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="label-style">
+    <ion-label>Full Name</ion-label>
+  </div>
+
+  <ion-item>
+    <ion-input placeholder="Add your full name"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="onCancel()">
+      update
+  </ion-button>
+
+
+</ion-content>

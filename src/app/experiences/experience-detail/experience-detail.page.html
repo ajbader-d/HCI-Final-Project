@@ -1,0 +1,104 @@
+<ion-content>
+  <div class="bk-img">
+    <ion-header no-border>
+      <ion-toolbar color="translucent">
+        <ion-buttons slot="start">
+          <ion-back-button
+          defaultHref="/tabs/cities/{{loadedCity.id}}/experiences/{{loadedCity.experienceUrl}}"
+          ></ion-back-button>
+          <!-- <ion-icon name="arrow-round-back" (click)="myBackButton()"></ion-icon> -->
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+    <img src=" {{ loadedExp.imageUrl }}" />
+
+    <div class="title-holder">
+      <h2>{{loadedCity.title}}</h2>
+    </div>
+  </div>
+
+  <div class="bk-line">
+    <h3>{{loadedExp.title}}</h3>
+  </div>
+
+  <ion-segment
+    [(ngModel)]="category"
+    (ionChange)="segmentChanged(category)"
+    value="about"
+  >
+    <ion-segment-button value="about" checked>
+      <ion-label>About</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="location">
+      <ion-label>Details</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="contact">
+      <ion-label>Contact</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="category">
+    <div
+      class="content ion-margin-start  ion-margin-end"
+      *ngSwitchCase="'about'"
+    >
+      <p class="content-text " paddings>
+        {{loadedExp.description}}
+      </p>
+    </div>
+
+    <div
+      class="content ion-margin-start  ion-margin-end"
+      *ngSwitchCase="'location'"
+    >
+          <ion-list>
+              <ion-item>
+                <ion-avatar class="ion-margin-start ion-margin-end">
+                  <img src="../assets/img/time.png" />
+                </ion-avatar>
+                <ion-label>{{loadedExp.duration}}</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-avatar class="ion-margin-start ion-margin-end">
+                  <img src="../assets/img/meeting-point.png" />
+                </ion-avatar>
+                <ion-label>{{loadedExp.meetingPoint}}</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-avatar class="ion-margin-start ion-margin-end">
+                  <img src="../assets/img/tour.png" />
+                </ion-avatar>
+                <ion-label>{{loadedExp.tripType}}</ion-label>
+              </ion-item>
+            </ion-list>
+    </div>
+
+    <div
+      class="content ion-margin-start  ion-margin-end"
+      *ngSwitchCase="'contact'"
+    >
+      <ion-list>
+        <ion-item>
+          <ion-avatar class="ion-margin-start ion-margin-end">
+            <img src="../assets/img/at.png" />
+          </ion-avatar>
+          <ion-label>{{loadedExp.email}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-avatar class="ion-margin-start ion-margin-end">
+            <img src="../assets/img/mobile-phone.png" />
+          </ion-avatar>
+          <ion-label>{{loadedExp.phone}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-avatar class="ion-margin-start ion-margin-end">
+            <img src="../assets/img/internet.png" />
+          </ion-avatar>
+          <a href="{{loadedExp.website}}">website</a>
+          <!-- <ion-label>{{loadedExp.website}}</ion-label> -->
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+</ion-content>

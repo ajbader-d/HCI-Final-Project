@@ -1,0 +1,32 @@
+<ion-content>
+  <div class="bk-img">
+    <ion-header no-border>
+      <ion-toolbar color="translucent">
+        <ion-buttons slot="start">
+          <ion-back-button
+            defaultHref="/tabs/cities/city-detail/basic-information"
+          ></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <img src="../assets/img/hero-bk/basic-image.png" />
+  </div>
+
+  <div class="bk-line">
+    <h3>{{ loadedBasic.title }}</h3>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-avatar class="ion-margin-start ion-margin-end">
+        <ion-img [src]="loadedBasic.imageUrl"></ion-img>
+        <!-- <img src="loadedBasic.imageUrl" /> -->
+      </ion-avatar>
+      <ion-label>{{ loadedBasic.title }}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <p class="ion-margin-start ion-margin-end">
+    {{ loadedBasic.body }}
+  </p>
+</ion-content>
