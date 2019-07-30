@@ -1,0 +1,8 @@
+{
+  "name": "tabi",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}
