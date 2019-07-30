@@ -4,11 +4,11 @@ Human Computer Interaction Final project Tabi travel application for the Master 
 This project was presented as final project for HCI course
 
 # Tools was used
-Mock-up -> Balsamiq
-Low-fi prototype -> Balsamiq
-Medium-fi prototype -> Adobe XD
-high-fi prototype -> Adobe XD
-Final product -> Ionic 4 framework
+1-Mock-up -> Balsamiq
+2-Low-fi prototype -> Balsamiq
+3-Medium-fi prototype -> Adobe XD
+4-High-fi prototype -> Adobe XD
+5-Final product -> Ionic 4 framework
 
 # Design Process Design Process
 # Overview
